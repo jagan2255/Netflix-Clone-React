@@ -3,7 +3,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     max-height: 250px;
-    cursor: pointer;
+    cursor: grab;
 
 }
 .poster::-webkit-scrollbar{
