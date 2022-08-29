@@ -48,7 +48,13 @@ function Slider(props) {
           <h3 className='heading2'>{props.title}</h3>
             <div className='poster'>
               {movie.map((itm,k)=>
-              <img onClick={()=> {getmovie(itm.id)}} className={ props.isSmall ?'smallimg':'poster22'} src={`${imgUrl+itm.backdrop_path}`} alt="" />
+              <div class="container22">
+               <img className={ props.isSmall ?'smallimg image':'poster22 image'} src={`${imgUrl+itm.backdrop_path}`} alt=""/>
+                  <div class="middle">
+                  <div onClick={()=> {getmovie(itm.id)}} class="text"><i className="fa-solid fa-play"></i> Play</div>
+                 </div>
+               </div>
+              
               )}
             </div>
                 { key && <Youtube videoId={key.key} opts={opts}/>}

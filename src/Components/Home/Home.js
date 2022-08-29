@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect , useState } from 'react'
 import { API_KEY, imgUrl } from '../../Constants/Constants'
-import { action , orginals } from '../../Constants/url'
+import { action , comedy, horror, orginals, romance } from '../../Constants/url'
 import Slider from '../Slider/Slider'
 import './Home.css'
 
@@ -39,7 +39,14 @@ function Home() {
 
         <div className='remaningbody'>
               <Slider url={orginals} title="Netflix Orginals" />
-              <Slider className="mx-1" url={action} title="Action" isSmall/>
+              <Slider className="mx-2" url={action} title="Action" isSmall/>
+              <Slider className="mx-2" url={comedy} title="Comedy" isSmall/>
+              <Slider className="mx-2" url={romance} title="Romance" isSmall/>
+              <Slider className="mx-2" url={horror} title="Horror" isSmall/>
+
+
+
+
               
         </div>
 
